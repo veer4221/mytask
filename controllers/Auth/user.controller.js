@@ -1,5 +1,5 @@
-import { User } from "../../models/index.cjs";
-import CustomerErrorHandler from "../../services/CustomErrorHandler.cjs";
+import { User } from "../../models/index.js";
+import CustomerErrorHandler from "../../services/CustomErrorHandler.js";
 
 const userController = {
   me: async (req, res, next) => {

@@ -1,5 +1,5 @@
-import CustomerErrorHandler from "../services/CustomErrorHandler.cjs";
-import JwtService from "../services/JwtService.cjs";
+import CustomerErrorHandler from "../services/CustomErrorHandler.js";
+import JwtService from "../services/JwtService.js";
 
 const auth = async (req, res, next) => {
   let authHeader = req.headers.authorization;
