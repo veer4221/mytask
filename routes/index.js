@@ -1,11 +1,11 @@
 import express, { Router } from "express";
 const router = express.Router();
-import { Transactioncontroller, registerController } from "../controllers";
-import loginController from "../controllers/Auth/login.controller";
-import auth from "../middlewares/auth";
-import userController from "../controllers/Auth/user.controller";
-import TimeLineController from "../controllers/TimeLine/timeline";
-import TaskController from "../controllers/Task/task";
+import { Transactioncontroller, registerController } from "../controllers/index.js";
+import loginController from "../controllers/Auth/login.controller.js";
+import auth from "../middlewares/auth.js";
+import userController from "../controllers/Auth/user.controller.js";
+import TimeLineController from "../controllers/TimeLine/timeline.js";
+import TaskController from "../controllers/Task/task.js";
 
 router.post("/register", registerController.register);
 router.post("/login", loginController.login);
