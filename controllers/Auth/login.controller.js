@@ -1,8 +1,8 @@
 import Joi from "joi";
-import CustomerErrorHandler from "../../services/CustomErrorHandler.js";
+import CustomerErrorHandler from "../../services/CustomErrorHandler";
 import bcrypt from "bcrypt";
-import JwtService from "../../services/JwtService.js";
-import { User } from "../../models/index.js";
+import JwtService from "../../services/JwtService";
+import { User } from "../../models";
 
 const loginController = {
   login: async (req, res, next) => {

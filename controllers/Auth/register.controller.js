@@ -1,8 +1,8 @@
 import Joi from "joi";
-import CustomerErrorHandler from "../../services/CustomErrorHandler.js";
-import { User } from "../../models/index.js";
+import CustomerErrorHandler from "../../services/CustomErrorHandler";
+import { User } from "../../models";
 import bcrypt from "bcrypt";
-import JwtService from "../../services/JwtService.js";
+import JwtService from "../../services/JwtService";
 
 const registerController = {
   async register(req, res, next) {

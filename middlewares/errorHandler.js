@@ -1,8 +1,7 @@
 
-import ValidationErro from "joi";
-const { ValidationError } = ValidationErro
-import { DEBUG_MODE } from "../config/index.js";
-import CustomerErrorHandler from "../services/CustomErrorHandler.js";
+import { ValidationError } from "joi";
+import { DEBUG_MODE } from "../config";
+import CustomerErrorHandler from "../services/CustomErrorHandler";
 
 const errorHandler = (err, req, res, next) => {
 
