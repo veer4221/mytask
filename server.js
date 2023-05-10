@@ -1,5 +1,5 @@
 import express from "express";
-import { APP_PORT, MONGO_ATLAS_URL } from "./config";
+import { APP_PORT, MONGO_ATLAS_URL } from "./config/index";
 const app = express();
 import routes from "./routes";
 import errorHandler from "./middlewares/errorHandler";

@@ -1,6 +1,6 @@
 import express, { Router } from "express";
 const router = express.Router();
-import { Transactioncontroller, registerController } from "../controllers";
+import { Transactioncontroller, registerController } from "../controllers/index";
 import loginController from "../controllers/Auth/login.controller";
 import auth from "../middlewares/auth";
 import userController from "../controllers/Auth/user.controller";
