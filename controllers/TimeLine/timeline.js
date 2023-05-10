@@ -5,7 +5,8 @@ import TimeLine from "../../models/timeline";
 import * as fs from 'fs';
 import { decodeBase64Image } from "../../utils/base64decode";
 import { timelineImagePath } from "../../image/Timelines";
-var mime = require('mime');
+// var mime = require('mime');
+import mime from "mime"
 const TimeLineController = {
     insertTimeLine: async (req, res, next) => {
         try {

@@ -8,7 +8,9 @@ import { timelineImagePath } from "../../image/Timelines";
 import Task from "../../models/task";
 import { taskImagePath } from "../../image/TaskImage";
 // import task from "../../models/task";
-var mime = require('mime');
+// var mime = require('mime');
+import mime from "mime"
+
 const TaskController = {
     insertTask: async (req, res, next) => {
         // try {
