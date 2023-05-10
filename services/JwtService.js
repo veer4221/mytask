@@ -1,4 +1,4 @@
-import { JWT_SECRET } from "../config";
+import { JWT_SECRET } from "../config/index";
 import jwt from "jsonwebtoken"
 
 class JwtService {
