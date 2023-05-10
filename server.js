@@ -11,7 +11,7 @@ app.use(express.json({ limit: '50mb', extended: true }))
 // app.use(express.urlencoded({ limit: '50mb', extended: true }))
 app.use('/image', express.static('image'));
 app.use("/api", routes);
-app.get("/", (req, res) => res.send("test API"))
+app.get("/", (req, res) => res.send("Raj bahai done backend deply thai gyu"))
 mongoose.connect(MONGO_ATLAS_URL, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
