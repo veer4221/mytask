@@ -1,5 +1,6 @@
 
-import { ValidationError } from "joi";
+import ValidationErro from "joi";
+const { ValidationError } = ValidationErro
 import { DEBUG_MODE } from "../config/index.js";
 import CustomerErrorHandler from "../services/CustomErrorHandler.js";
 
