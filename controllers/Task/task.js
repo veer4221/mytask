@@ -1,12 +1,12 @@
 
-import CustomerErrorHandler from "../../services/CustomErrorHandler";
+import CustomerErrorHandler from "../../services/CustomErrorHandler.js";
 
-import TimeLine from "../../models/timeline";
+import TimeLine from "../../models/timeline.js";
 import * as fs from 'fs';
-import { decodeBase64Image } from "../../utils/base64decode";
-import { timelineImagePath } from "../../image/Timelines";
-import Task from "../../models/task";
-import { taskImagePath } from "../../image/TaskImage";
+import { decodeBase64Image } from "../../utils/base64decode.js";
+
+import Task from "../../models/task.js";
+import { taskImagePath } from "../../image/TaskImage/index.js";
 // import task from "../../models/task";
 var mime = require('mime');
 const TaskController = {

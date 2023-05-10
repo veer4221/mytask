@@ -1,10 +1,10 @@
 
-import CustomerErrorHandler from "../../services/CustomErrorHandler";
+import CustomerErrorHandler from "../../services/CustomErrorHandler.js";
 
-import TimeLine from "../../models/timeline";
+import TimeLine from "../../models/timeline.js";
 import * as fs from 'fs';
-import { decodeBase64Image } from "../../utils/base64decode";
-import { timelineImagePath } from "../../image/Timelines";
+import { decodeBase64Image } from "../../utils/base64decode.js";
+import { timelineImagePath } from "../../image/Timelines/index.js";
 var mime = require('mime');
 const TimeLineController = {
     insertTimeLine: async (req, res, next) => {

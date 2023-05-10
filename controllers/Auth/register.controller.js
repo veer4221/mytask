@@ -1,6 +1,6 @@
 import Joi from "joi";
 import CustomerErrorHandler from "../../services/CustomErrorHandler";
-import { User } from "../../models";
+import { User } from "../../models/index.js";
 import bcrypt from "bcrypt";
 import JwtService from "../../services/JwtService";
 
