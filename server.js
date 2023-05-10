@@ -1,7 +1,7 @@
 import express from "express";
 import { APP_PORT, MONGO_ATLAS_URL } from "./config/index.js";
 const app = express();
-import routes from "./routes";
+import routes from "./routes/index.js";
 import errorHandler from "./middlewares/errorHandler";
 import mongoose from "mongoose";
 import cors from "cors";
