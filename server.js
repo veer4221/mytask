@@ -1,8 +1,8 @@
 import express from "express";
-import { APP_PORT, MONGO_ATLAS_URL } from "./config/index.js";
+import { APP_PORT, MONGO_ATLAS_URL } from "./config/index.cjs";
 const app = express();
-import routes from "./routes/index.js";
-import errorHandler from "./middlewares/errorHandler.js";
+import routes from "./routes/index.cjs";
+import errorHandler from "./middlewares/errorHandler.cjs";
 import mongoose from "mongoose";
 import cors from "cors";
 app.use(cors());

@@ -1,9 +1,9 @@
 
-import CustomerErrorHandler from "../../services/CustomErrorHandler.js";
+import CustomerErrorHandler from "../../services/CustomErrorHandler.cjs";
 
-import TimeLine from "../../models/timeline.js";
+import TimeLine from "../../models/timeline.cjs";
 import * as fs from 'fs';
-import { decodeBase64Image } from "../../utils/base64decode.js";
+import { decodeBase64Image } from "../../utils/base64decode.cjs";
 import { timelineImagePath } from "../../image/Timelines/index.js";
 var mime = require('mime');
 const TimeLineController = {

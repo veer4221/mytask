@@ -1,10 +1,10 @@
 import Joi from "joi";
-import CustomerErrorHandler from "../../services/CustomErrorHandler.js";
+import CustomerErrorHandler from "../../services/CustomErrorHandler.cjs";
 import bcrypt from "bcrypt";
-import JwtService from "../../services/JwtService.js";
-import { User } from "../../models/index.js";
-import { decryptOBJ, descryptData, encryptData } from "../../utils/CriptoJS.js";
-import Transaction from "../../models/Transaction.js";
+import JwtService from "../../services/JwtService.cjs";
+import { User } from "../../models/index.cjs";
+import { decryptOBJ, descryptData, encryptData } from "../../utils/CriptoJS.cjs";
+import Transaction from "../../models/Transaction.cjs";
 
 const Transactioncontroller = {
   Transaction: async (req, res, next) => {
