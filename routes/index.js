@@ -14,6 +14,8 @@ router.post("/Transaction", Transactioncontroller.Transaction);
 
 //timeLineRoute
 router.post("/Timeline", TimeLineController.insertTimeLine);
+router.post("/insertUserTimeline", TimeLineController.insertUserTimeline);
+router.get("/getUserTimeLine", TimeLineController.getUserTimeLine);
 router.get("/getTimeline", TimeLineController.getTimeLine);
 //task
 router.post("/Task", TaskController.insertTask);
